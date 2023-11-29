@@ -1,0 +1,157 @@
+<!-- Code made by Max Vilà Ruiz -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet"> <!-- Font for texts -->
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet"> <!-- Font for titles -->
+
+    <link rel="stylesheet" href="/css/Style.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div name="Background Header Image" class="header_backGroundImg">
+            <div class="titles title_small">
+                <h1>Benvingut/da</h1>
+            </div>
+
+            <div class="description">
+                <p>Organitzar-se amb 'Títol de la pàgina' és tan senzill com afegir els teus esdeveniments educatius i prou. Nosaltres ens encarreguem de la resta!</p>
+                <a onclick="help()">
+                    <img class="help" src="/img/question-mark.jpg">
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main style="margin-top: 1.5rem;"> <!-- Main tables: -->
+    
+        <div class="sections_home">
+    
+            <div style="background-color: var(--yellow);">
+                <button class="sectionTitle">Exàmens</button>
+            </div>
+    
+            <table class="table" id="table1">
+                <thead>
+                    <div>
+                        <th class="table_Default">Grau de dificultat</th>
+                        <th class="table_Default">Assignatura</th>
+                        <th class="table_Default">Data de l'examen</th>
+                        <th class="table_Default">Opcions</th>
+                    </div>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+    
+            <!-- To add more events: -->
+            <div class="group_addEvent">
+                <form class="form_addEvent" onsubmit="event.preventDefault(); onSubmit('examens');" autocomplete="off">
+                    <select class="form_elementSelector" id="difficulty1" required>
+                        <option value> Grau de dificultat </option>
+                        <option value="Fàcil">Fàcil</option>
+                        <option value="Mig">Mig</option>
+                        <option value="Difícil">Difícil</option>
+                    </select>
+                    <input type="text" class="form_element" id="name1" placeholder="Nom de l'esdeveniment" required>
+                    <input type="text" class="form_element" id="date1" placeholder="Data de venciment" required>
+    
+                    <button class="submit_formAddEvent" id="submit1">Crear</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="sections_home">
+        
+            <div style="background-color: var(--yellow);">
+                <button class="sectionTitle">Projectes</button>
+            </div>
+        
+            <table class="table" id="table2">
+                <thead>
+                    <div>
+                        <th class="table_Default">Grau de dificultat</th>
+                        <th class="table_Default">Títol del projecte</th>
+                        <th class="table_Default">Data d'entrega</th>
+                        <th class="table_Default">Opcions</th>
+                    </div>
+                </thead>
+                <tbody>
+        
+                </tbody>
+            </table>
+        
+            <!-- To add more events: -->
+            <div class="group_addEvent">
+                <form class="form_addEvent" onsubmit="event.preventDefault(); onSubmit('projectes');" autocomplete="off">
+                    <select class="form_elementSelector" id="difficulty2" required>
+                        <option value> Grau de dificultat </option>
+                        <option value="Fàcil">Fàcil</option>
+                        <option value="Mig">Mig</option>
+                        <option value="Difícil">Difícil</option>
+                    </select>
+                    <input type="text" class="form_element" id="name2" placeholder="Nom de l'esdeveniment" required>
+                    <input type="text" class="form_element" id="date2" placeholder="Data de venciment" required>
+        
+                    <button class="submit_formAddEvent" id="submit2">Crear</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="sections_home">
+        
+            <div style="background-color: var(--yellow);">
+                <button class="sectionTitle">Deures</button>
+            </div>
+        
+            <table class="table" id="table3">
+                <thead>
+                    <div>
+                        <th class="table_Default">Grau de dificultat</th>
+                        <th class="table_Default">Nom de la tasca</th>
+                        <th class="table_Default">Data d'entrega</th>
+                        <th class="table_Default">Opcions</th>
+                    </div>
+                </thead>
+                <tbody>
+        
+                </tbody>
+            </table>
+        
+            <!-- To add more events: -->
+            <div class="group_addEvent">
+                <form class="form_addEvent" onsubmit="event.preventDefault(); onSubmit('deures');" autocomplete="off">
+                    <select class="form_elementSelector" id="difficulty3" required>
+                        <option value> Grau de dificultat </option>
+                        <option value="Fàcil">Fàcil</option>
+                        <option value="Mig">Mig</option>
+                        <option value="Difícil">Difícil</option>
+                    </select>
+                    <input type="text" class="form_element" id="name3" placeholder="Nom de l'esdeveniment" required>
+                    <input type="text" class="form_element" id="date3" placeholder="Data de venciment" required>
+        
+                    <button class="submit_formAddEvent" id="submit3">Crear</button>
+                </form>
+            </div>
+        </div>
+
+        <br><br><br>
+    </main>
+
+    <script src="js/Home.js"></script> <!-- JavaScript document (for internal 'Home' functions) -->
+</body>
+
+</html>

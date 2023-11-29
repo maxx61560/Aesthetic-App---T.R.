@@ -1,0 +1,52 @@
+<!-- Code made by Max Vilà Ruiz -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Títol de la pàgina web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
+    <!-- Font for texts -->
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <!-- Font for titles -->
+
+    <link rel="stylesheet" href="/css/Style.css"> <!-- CSS document -->
+
+</head>
+
+<body class="header">
+    <header class="header_backGroundImg"> <!-- In the style of the class 'header' is the background img -->
+        <div class="titles_index titles">
+            <h1>Títol de la pàgina</h1> <!-- Page title. Propostes: 'Xmax Free' -->
+            <h2>Organitzar-se és senzill</h2> <!-- Slogan. Propostes: 'Ordre, equilibri i llibertat' -->
+        </div>
+        
+        <div class="description">
+            <p>L'aplicació web on ponts organitzar les teves tasques acadèmiques de manera fàcil, ràpida i gratuïta.</p>
+            <a onclick="help()">
+                <img class="help" src="/img/question-mark.jpg">
+            </a>
+        </div>  <!-- Description about the utility of this website -->
+    </header>
+
+    <main class="main_index">
+        <div class="aGroup_index">
+            <a href="LogIn.html" class="a_index">Iniciar Sessió</a>
+            <a href="Register.html" class="a_index">Registrar-se</a>
+        </div>
+    </main>
+
+    <script>
+        //Global functions:
+        function help() {
+            alert("Ajuda'ns a millorar! \nSi tens algun problema amb l'aplicatiu o has trobat algun error en el sistema, fes-nos-ho saber al següent correu electrònic:    'maxvilaruiz123@gmail.com'. \n\nMoltes gràcies.")
+        }
+    </script>
+</body>
+
+</html>

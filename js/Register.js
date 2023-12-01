@@ -27,7 +27,7 @@ submit.addEventListener('click', function (e) {
     for (let i = 0; i < database.length; i++) {
         if (email.value !== database[i][0]) { //To find if the email is already being used.
             if (password.value === password2.value) { //To confirm that both passwords are equals.
-                alert(`Perfecte! Per tal que es desin els canvis, envia la següent informació al correu electrònic 'maxvilaruiz123@gmail.com': \n\n${result}`);
+                alert(`Perfecte! Si desitges que es desin els canvis per pròximes vegades, envia la següent informació al correu electrònic 'maxvilaruiz123@gmail.com': \n\n${result}`);
                 window.location.href = 'Home.html';
                 break;
             } else {

@@ -140,7 +140,7 @@ input::placeholder{
 @media (max-width: 768px){
     .aGroup_index{
         padding-top: 6rem;
-        padding-bottom: 13.15rem;
+        padding-bottom: 25rem;
     }
 }
 .a_index{
@@ -156,8 +156,6 @@ input::placeholder{
     transition: .25s;
     scale: 1.1;
 }
-
-
 
 
 
